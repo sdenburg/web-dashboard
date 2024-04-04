@@ -14,7 +14,7 @@ const theme = createTheme({
     fontFamily: roboto.style.fontFamily,
   },
   palette: {
-    mode: 'dark'
+    mode: 'light'
   }
 });
 
