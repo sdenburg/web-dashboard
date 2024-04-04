@@ -22,7 +22,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
-import Orders from './Orders';
+import ResultsTable from './ResultsTable';
 
 function Copyright(props: any) {
   return (
@@ -195,7 +195,7 @@ export default function Dashboard() {
             {/* Recent Orders */}
             <Grid item xs={12}>
               <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                <Orders />
+                <ResultsTable />
               </Paper>
             </Grid>
           </Grid>

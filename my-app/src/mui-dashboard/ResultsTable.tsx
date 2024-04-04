@@ -38,7 +38,7 @@ const rows2 = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-export default function Orders() {
+export default function ResultsTable() {
   return (
     <React.Fragment>
       <Title>Results</Title>
