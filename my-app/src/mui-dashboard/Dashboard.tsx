@@ -24,19 +24,6 @@ import Chart from './Chart';
 import Deposits from './Deposits';
 import ResultsTable from './ResultsTable';
 
-function Copyright(props: any) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
 const drawerWidth: number = 240;
 
 interface AppBarProps extends MuiAppBarProps {
@@ -199,7 +186,6 @@ export default function Dashboard() {
               </Paper>
             </Grid>
           </Grid>
-          <Copyright sx={{ pt: 4 }} />
         </Container>
       </Box>
     </Box>
