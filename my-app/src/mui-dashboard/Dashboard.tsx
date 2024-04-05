@@ -1,8 +1,7 @@
 'use client'
 
 import * as React from 'react';
-import { styled, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { styled } from '@mui/material/styles';
 import MuiDrawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
@@ -15,13 +14,12 @@ import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+import { mainListItems } from './listItems';
 import Chart from './Chart';
-import Deposits from './Deposits';
+import Details from './Details';
 import ResultsTable from './ResultsTable';
 
 const drawerWidth: number = 240;
@@ -109,7 +107,7 @@ export default function Dashboard() {
             noWrap
             sx={{ flexGrow: 1 }}
           >
-            Dashboard
+            Application Dashboard
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -134,8 +132,6 @@ export default function Dashboard() {
         <Divider />
         <List component="nav">
           {mainListItems}
-          <Divider sx={{ my: 1 }} />
-          {secondaryListItems}
         </List>
       </Drawer>
       <Box
@@ -166,7 +162,6 @@ export default function Dashboard() {
                 <Chart />
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper
                 sx={{
@@ -176,10 +171,9 @@ export default function Dashboard() {
                   height: 240,
                 }}
               >
-                <Deposits />
+                <Details />
               </Paper>
             </Grid>
-            {/* Recent Orders */}
             <Grid item xs={12}>
               <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                 <ResultsTable />

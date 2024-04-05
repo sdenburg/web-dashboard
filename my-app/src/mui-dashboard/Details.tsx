@@ -1,5 +1,3 @@
-'use client'
-
 import * as React from 'react';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
@@ -9,19 +7,19 @@ function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
-export default function Deposits() {
+export default function Details() {
   return (
     <React.Fragment>
-      <Title>Recent Deposits</Title>
+      <Title>Details</Title>
       <Typography component="p" variant="h4">
-        $3,024.00
+        Search Name
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on 15 March, 2019
+        on 04 April, 2024
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
+          View history
         </Link>
       </div>
     </React.Fragment>
