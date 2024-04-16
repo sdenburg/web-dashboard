@@ -15,6 +15,7 @@ import { getResults } from '@/api/service';
 export default function Home() {
   useEffect(() => {
     getResults().then((val) => console.log(val))
+    console.log("test2")
   })
 
   return (
