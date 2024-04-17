@@ -6,7 +6,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { CssBaseline } from '@mui/material';
 import Dashboard from '@/mui-dashboard/Dashboard';
-import ClientSetup from '@/components/clientSetup';
+import ClientSetup from '@/components/ClientSetup';
 
 const inter = Inter({ subsets: ['latin'] })
 
