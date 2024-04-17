@@ -1,7 +1,5 @@
-import Dashboard from '@/mui-dashboard/Dashboard'
+import Dashboard from "@/mui-dashboard/Dashboard";
 
 export default function Home() {
-  return (
-    <Dashboard></Dashboard>
-  )
+  return <Dashboard></Dashboard>;
 }

@@ -4,5 +4,8 @@
     "@emotion/styled": "^11.11.5",
     "@mui/x-data-grid": "^7.1.0",
     "miragejs": "^0.1.48"
+  },
+  "devDependencies": {
+    "prettier": "3.2.5"
   }
 }

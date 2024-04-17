@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Typography from "@mui/material/Typography";
 
 interface TitleProps {
   children?: React.ReactNode;
