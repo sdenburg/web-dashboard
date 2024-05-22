@@ -11,10 +11,11 @@ import Details from "@/mui-dashboard/Details";
 import ResultsTable from "@/mui-dashboard/ResultsTable";
 import { useEffect } from "react";
 import { getResults } from "@/api/service";
+import Graph from "@/components/Graph";
 
 export default function Home() {
   useEffect(() => {
-    getResults().then((val) => console.log(val));
+    //getResults().then((val) => console.log(val));
   });
 
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       <Toolbar />
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
         <Grid container spacing={3}>
+          <Grid item xs={12} md={8} lg={9}>
+            <Graph></Graph>
+          </Grid>
           {/* Chart */}
           <Grid item xs={12} md={8} lg={9}>
             <Paper
